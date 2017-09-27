@@ -91,6 +91,7 @@
 // }
 
 
+
 // /* From here down, you are not expected to understand.... for now :)
 //   Nothing to see here!
 
@@ -161,7 +162,7 @@ const scratchData = [
 ];
 
 function findById(items, idNum) {
- // your code here
+  return items.find(item => item.id === idNum );
 }
 
 
