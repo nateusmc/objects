@@ -114,8 +114,21 @@ const obj3 = {
   title: 'Company Owner'
 };
 
+
 myarr.push(obj1, obj2, obj3);
-console.log(let key in myarr[0]);
+ 
+myarr.forEach((worker) => {
+  // console.log(worker.name, worker.title);
+  if (worker.boss) {
+    console.log(`${worker.title} ${worker.name} reports to ${worker.boss}`);
+  } else {
+    console.log(`${worker.title} ${worker.name} doesn't report to anybody.`);
+  }
+});
+
+
+// console.log(let key in myarr[0]);
+
 // console.log(myarr[0].name, myarr[0].title);
 // console.log(myarr[1].name, myarr[1].title);
 // console.log(myarr[2].name, myarr[2].title);
