@@ -27,8 +27,26 @@ const object1 = {
 };
 
 for (let key in object1) {
-  console.log(key);
+  let value = object1[key];
+  // if the value is a function
+  if (typeof value === 'function'){
+    value = value();
+  }
+  // do something different with the assignment of value;
+
+  console.log(`The value of ${key} is ${value}.`);
+  // console.log(object1[key]);
 }
 
-//   let i = 0; i < object1.length; i++
-// }
+// console.log(object1.quux) // => the body of the function
+
+// const farm = {
+//   dog: 'corgi',
+//   cat: 2,
+//   cow: 4,
+// };
+
+// const desiredAnimal = 'cow';
+
+// const randomProp = farm[desiredAnimal];
+// console.log(randomProp);
