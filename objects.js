@@ -67,3 +67,31 @@
 // };
 
 // console.log(hobbit.meals[3]);
+
+//4. Arrays of Objects
+
+const myarr = [];
+
+const obj1 = {
+  name: 'Nate',
+  job_title: 'Developer'
+};
+
+const obj2 = {
+  name: 'Adam',
+  job_title: 'Developer'
+};
+
+const obj3 = {
+  name: 'Elias',
+  job_title: 'Instructor'
+};
+
+myarr.push(obj1, obj2, obj3);
+console.log(myarr[0].name, myarr[0].job_title);
+console.log(myarr[1].name, myarr[1].job_title);
+console.log(myarr[2].name, myarr[2].job_title);
+
+
+//5 Properties that aren't there
+
